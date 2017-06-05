@@ -10,6 +10,7 @@ def get_tests():
             casos.append(indice.strip())
     return casos
 
+
 def main():
     """main function"""
     tests = get_tests()
@@ -17,8 +18,8 @@ def main():
     phrase = int(tests[0])
     for test in tests:
         data[len(test)] = test
-    for i in range(phrase):
-        print(data[max(data)])
+    for indice in range(phrase):
+        print data[max(data)]
         del data[max(data)]
 
 
